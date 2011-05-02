@@ -1,0 +1,27 @@
+\section{Documentation}
+
+\input{documentation/overview}
+
+\input{documentation/olimex}
+
+\input{documentation/atmega}
+
+\subsection{Networking and Communication}
+\subsubsection{Serial}
+% sample serial call/response
+\subsubsection{XMPP}
+% sample xml
+
+
+\subsection{Power Supply Design}
+\subsubsection{Power Consumption}
+	\begin{itemize}
+		\item \olimex
+		\item \atmega board
+	\end{itemize}
+\subsubsection{Fabrication \& Cost Considerations}
+\subsubsection{Feasibility}
+
+\input{documentation/clojure}
+
+\subsection{Building \& Testing}

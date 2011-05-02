@@ -1,0 +1,68 @@
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+
+% common
+\newcommand{\course}{ENGN1650\xspace}
+\newcommand{\coursetitle}{Embedded Systems Design\xspace}
+\newcommand{\netlets}{Netlets\xspace}
+\newcommand{\netlet}{Netlet\xspace}
+\newcommand{\brown}{Brown University\xspace}
+\newcommand{\brownengn}{Brown University Engineering Department\xspace}
+
+% proper nouns, part numbers
+\newcommand{\olimex}{Olimex SAM9-9260\xspace}
+\newcommand{\arm}{SAM9-l9260\xspace}
+\newcommand{\atmel}{Atmel ATmega8a\xspace}
+\newcommand{\atmega}{ATmega8a\xspace}
+\newcommand{\arduino}{Arduino Duemilenove\xspace}
+\newcommand{\arduinoavr}{Arduino Duemilenove (ATmega328)\xspace}
+
+\newcommand{\allegro}{ACS712\xspace}
+\newcommand{\relay}{ORWH-SH-105HM3F\xspace}
+\newcommand{\relaymf}{Tyco Electronics\xspace}
+\newcommand{\transistor}{SI2308BDS\xspace}
+\newcommand{\transistormf}{Vishay Siliconix\xspace}
+\newcommand{\shiftr}{MAX3232E\xspace}
+
+\newcommand{\dxd}{DxDesigner\xspace}
+\newcommand{\pads}{Mentor Graphics PADS\xspace}
+
+\newcommand{\ethernet}{Ethernet\xspace}
+\newcommand{\wifi}{Wi-Fi\xspace}
+\newcommand{\wifix}{802.11X\xspace}
+\newcommand{\wpae}{WPA2 Enterprise\xspace}
+\newcommand{\linux}{Linux\xspace}
+\newcommand{\glinux}{GNU/Linux\xspace}
+\newcommand{\google}{Google\xspace}
+\newcommand{\aengn}{AppEngine\xspace}
+\newcommand{\gae}{Google AppEngine\xspace}
+\newcommand{\jsmack}{Jive Smack\xspace}
+\newcommand{\smack}{Smack\xspace}
+\newcommand{\rsserial}{RS-232\xspace}
+\newcommand{\jvm}{Java Virtual Machine\xspace}
+\newcommand{\clojure}{Clojure\xspace}
+\newcommand{\lisp}{Lisp\xspace}
+\newcommand{\js}{JavaScript\xspace}
+\newcommand{\java}{Java\xspace}
+\newcommand{\jquery}{jQuery\xspace}
+\newcommand{\cljybh}{\texttt{clj-ybh}\xspace}
+\newcommand{\github}{GitHub\xspace}
+\newcommand{\git}{Git\xspace}
+\newcommand{\lein}{Leiningen\xspace}
+\newcommand{\mongodb}{MongoDB\xspace}
+\newcommand{\congomongo}{CongoMongo\xspace}
+\newcommand{\highcharts}{Highcharts\xspace}
+\newcommand{\emacs}{Emacs\xspace}
+\newcommand{\xmpp}{XMPP\xspace}
+\newcommand{\umap}{\texttt{*users-map*}\xspace}
+
+% symbols
+\newcommand{\pfcap}[1]{\SI{#1}{\pico\farad}}
+\newcommand{\nfcap}[1]{\SI{#1}{\nano\farad}}
+\newcommand{\kres}[1]{\SI{#1}{\kilo\ohm}}
+\newcommand{\mres}[1]{\SI{#1}{\mega\ohm}}
+\newcommand{\res}[1]{\SI{#1}{\ohm}}
+\newcommand{\vdd}{\ensuremath{V_{\mathrm{DD}}}\xspace}
+
+% values
+\newcommand{\vddval}{\SI{5}{\volt}}

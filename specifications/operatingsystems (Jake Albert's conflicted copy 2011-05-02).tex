@@ -1,0 +1,48 @@
+\subsubsection{Operating Systems}
+Concurrently with chip selection, we looked at different operating systems that could be used to power netlets. Because chip selection and OS selection are co-dependent, we tried to focus on OSes with a long list of supported hardware. Several other requirements drove our OS choice.
+
+\paragraph{Peripheral Support} Native support for peripherals while not completely necessary lowers the amount of work necessary to get a proof of concept going. \netlet requires the following peripherals: ADC, UART, and GPIO. Most operating systems offer some amount of support for such common peripherals.
+
+\paragraph{Wireless Networking} The operating system must be able to accomodate wireless networking. This entails the existence of an TCP/IP stack, A wireless stack, and hardware support for an RF transceiver. Furthermore, some form of encryption needs to be supported as listed earlier in the specifications stage. Some operating systems offer encryption as a feature, others have access to software packages that implement encryption.
+
+\paragraph{XMPP stack} XMPP is a complex protocol, and implementing it from scratch would also require more work than we have time for. It is therefore important that some amount of xmpp functionality be existent either within the operating system itself or in the software packages available for it.
+
+\paragraph{Documentation} \netlet being our first embedded systems project, it is important that the operating system be well documented and have an active community willing to help us troubleshoot.
+
+\paragraph{Hardware requirement} In order to meet our cost requirements, we want the hardware requirement of the operating system to be as low as possible while still allowing for the aforementionned features.
+\newline
+\\
+Many operating systems exist for embedded systems. We simplicity's sake, we lump them into three groups: No OS, RTOSes, GNU/Linux.\\
+
+Not using an operating system would mean implementing all of the stacks ourselves, an ambitious if not down right impossible endeavor.\\
+
+Real Time OSes are a mixed bunch. Their time-consistency and low memory footprint makes them desirable, but their general lack of support for protocols and hardware complicates the matter. Many of them exist that are targeted at sensor networks: TinyOS, picoOS, and Contiki to name a few. While all of the aformentionned OSes have an IP stack and wireless capability, only Contiki has an XMPP stack: \uxmpp . Last but not least, the smaller community surrounding these OSes makes it much more difficult for a neophyte to figure out how to work it all out.\\
+
+GNU/Linux is quite the opposite. It supports a wide number of hardware devices, boasts an extensive list of supported software, and is used by countless people. Unfortunately, it is also much more ressource-intensive than other alternatives, with memory requirements of a few megabytes for a barebones linux kernel to run comfortably.
+The following table highlights the differences:
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|r|}
+\hline
+\textbf{OS} & \textbf{Min RAM (kB)} & \textbf{Peripheral Support} & \textbf{Wireless Networking} & \textbf{XMPP} & \textbf{User Base} \\
+\hline \hline
+No OS & N/A & None & None & No & N/A\\
+\hline
+TinyOS & 0.5 & ADC,UART,GPIO & Zigbee & No & Small\\
+\hline
+Contiki & 0.5 & Not yet for sale\\
+\hline
+Insteon USB controller & Switch outlets via USB & \$70\\
+\hline
+HiSaver & Switch outlets using motion detector  & \$110\\
+\hline
+Einistic Smart Strip & Report power consumption to a controller & \$500 "starter kit"\\
+\hline
+Modlet & Metering and Switching & Not yet for sale\\
+\hline
+\end{tabular}
+\caption{OS comparison chart}\label{tab:existingproducts}
+\end{center}
+\end{table}

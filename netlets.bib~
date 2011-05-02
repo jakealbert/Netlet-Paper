@@ -1,0 +1,73 @@
+@INPROCEEDINGS{uXMPP, 
+author={Hornsby, A. and Bail, E.}, 
+booktitle={Ultra Modern Telecommunications Workshops, 2009. ICUMT '09. International Conference on}, title={ $\micro$XMPP: Lightweight implementation for low power operating system Contiki}, 
+year={2009}, 
+month={oct.}, 
+volume={}, 
+number={}, 
+pages={1-5}, 
+doi={10.1109/ICUMT.2009.5345594}, 
+ISSN={},}
+
+@misc{
+balauqemu,
+Author = {Francesco Balducci},
+Title = {Balau: Freedom Embedded -- Compiling Linux Kernel for QEMU ARM Emulator},
+year = {2010},
+howpublished = {\url{http://balau82.wordpress.com/2010/03/22/compiling-linux-kernel-for-qemu-arm-emulator/}} }
+
+@misc{
+balaubare,
+Author = {Francesco Balducci},
+Title = {Balau: Freedom Embedded -- Hello World for Bare-Metal ARM using QEMU},
+year = {2010},
+howpublished = {\url{http://balau82.wordpress.com/2010/02/28/hello-world-for-bare-metal-arm-using-qemu/}} }
+
+@misc{
+balaunfs,
+Author = {Francesco Balducci},
+Title = {Balau: Freedom Embedded -- Linux NFS Root under QEMU ARM Emulator},
+year = {2010},
+howpublished = {\url{http://balau82.wordpress.com/2010/04/27/linux-nfs-root-under-qemu-arm-emulator/}} }
+
+
+
+@inproceedings{Duquennoy,
+ author = {Duquennoy, Simon and Grimaud, Gilles and Vandewalle, Jean-Jacques},
+ title = {Serving embedded content via web applications: model, design and experimentation},
+ booktitle = {Proceedings of the seventh ACM international conference on Embedded software},
+ series = {EMSOFT '09},
+ year = {2009},
+ isbn = {978-1-60558-627-4},
+ location = {Grenoble, France},
+ pages = {117--126},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1629335.1629352},
+ acmid = {1629352},
+ publisher = {ACM},
+ address = {New York, NY, USA}} 
+ 
+@INPROCEEDIGS{4299111, 
+author={Bernardos, C.J. and Soto, I. and Zapata, S. and Hugo, D.V. and Sargento, S.}, 
+title={Mobile and Wireless Communications Summit -- Accessing the Internet through Moving Networks}, 
+year={2007}, 
+month={july}, 
+volume={}, 
+number={}, 
+pages={1-5}, 
+ISSN={}}
+
+
+
+@book{anderson,
+    author = {Anderson, Ross J.},
+    edition = {1},
+    isbn = {0471389226},
+    publisher = {Wiley},
+    title = {Security Engineering: A Guide to Building Dependable Distributed Systems},
+    url = {http://www.cl.cam.ac.uk/~rja14/book.html},
+    year = {2001}
+}
+
+
+}

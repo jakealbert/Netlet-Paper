@@ -1,0 +1,309 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 0.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{anderson}{book}{}
+  \name{author}{1}{%
+    {{Anderson}{A.}%
+     {Ross~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley}%
+  }
+  \strng{namehash}{ARJ1}
+  \strng{fullhash}{ARJ1}
+  \field{sortinit}{A}
+  \field{edition}{1}
+  \field{isbn}{0471389226}
+  \field{title}{Security Engineering: A Guide to Building Dependable
+  Distributed Systems}
+  \verb{url}
+  \verb http://www.cl.cam.ac.uk/~rja14/book.html
+  \endverb
+  \field{year}{2001}
+\endentry
+
+\entry{balauqemu}{misc}{}
+  \name{author}{1}{%
+    {{Balducci}{B.}%
+     {Francesco}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BF1}
+  \strng{fullhash}{BF1}
+  \field{sortinit}{B}
+  \field{howpublished}{\url{http://balau82.wordpress.com/2010/03/22/compiling-%
+linux-kernel-for-qemu-arm-emulator/}}
+  \field{title}{Balau: Freedom Embedded -- Compiling Linux Kernel for QEMU ARM
+  Emulator}
+  \field{year}{2010}
+\endentry
+
+\entry{balaubare}{misc}{}
+  \name{author}{1}{%
+    {{Balducci}{B.}%
+     {Francesco}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BF1}
+  \strng{fullhash}{BF1}
+  \field{sortinit}{B}
+  \field{howpublished}{\url{http://balau82.wordpress.com/2010/02/28/hello-worl%
+d-for-bare-metal-arm-using-qemu/}}
+  \field{title}{Balau: Freedom Embedded -- Hello World for Bare-Metal ARM using
+  QEMU}
+  \field{year}{2010}
+\endentry
+
+\entry{balaunfs}{misc}{}
+  \name{author}{1}{%
+    {{Balducci}{B.}%
+     {Francesco}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BF1}
+  \strng{fullhash}{BF1}
+  \field{sortinit}{B}
+  \field{howpublished}{\url{http://balau82.wordpress.com/2010/04/27/linux-nfs-%
+root-under-qemu-arm-emulator/}}
+  \field{title}{Balau: Freedom Embedded -- Linux NFS Root under QEMU ARM
+  Emulator}
+  \field{year}{2010}
+\endentry
+
+\entry{movingnet}{inproceedings}{}
+  \name{author}{5}{%
+    {{Bernardos}{B.}%
+     {C.J.}{C.}%
+     {}{}%
+     {}{}}%
+    {{Soto}{S.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{Zapata}{Z.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{Hugo}{H.}%
+     {D.V.}{D.}%
+     {}{}%
+     {}{}}%
+    {{Sargento}{S.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BC+1}
+  \strng{fullhash}{BCSIZSHDSS1}
+  \field{sortinit}{B}
+  \field{pages}{1\bibrangedash 5}
+  \field{title}{Mobile and Wireless Communications Summit -- Accessing the
+  Internet through Moving Networks}
+  \field{year}{2007}
+\endentry
+
+\entry{tycorelay}{misc}{}
+  \name{author}{1}{%
+    {{Corporation}{C.}%
+     {Tyco~Electronics}{T.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CTE1}
+  \strng{fullhash}{CTE1}
+  \field{sortinit}{C}
+  \field{howpublished}{\url{http://relays.tycoelectronics.com/appnotes/app_pdf%
+s/13c3203.pdf}}
+  \field{title}{Relay Contact Arc Phenomenon Application Note}
+\endentry
+
+\entry{Duquennoy}{inproceedings}{}
+  \name{author}{3}{%
+    {{Duquennoy}{D.}%
+     {Simon}{S.}%
+     {}{}%
+     {}{}}%
+    {{Grimaud}{G.}%
+     {Gilles}{G.}%
+     {}{}%
+     {}{}}%
+    {{Vandewalle}{V.}%
+     {Jean-Jacques}{J.-J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \strng{namehash}{DSGGVJJ1}
+  \strng{fullhash}{DSGGVJJ1}
+  \field{sortinit}{D}
+  \field{booktitle}{Proceedings of the seventh ACM international conference on
+  Embedded software}
+  \field{isbn}{978-1-60558-627-4}
+  \field{pages}{117\bibrangedash 126}
+  \field{series}{EMSOFT '09}
+  \field{title}{Serving embedded content via web applications: model, design
+  and experimentation}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1629335.1629352
+  \endverb
+  \field{year}{2009}
+\endentry
+
+\entry{uXMPP}{inproceedings}{}
+  \name{author}{2}{%
+    {{Hornsby}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{Bail}{B.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HABE1}
+  \strng{fullhash}{HABE1}
+  \field{sortinit}{H}
+  \field{booktitle}{Ultra Modern Telecommunications Workshops, 2009. ICUMT '09.
+  International Conference on}
+  \verb{doi}
+  \verb 10.1109/ICUMT.2009.5345594
+  \endverb
+  \field{pages}{1\bibrangedash 5}
+  \field{title}{$\micro$XMPP: Lightweight implementation for low power
+  operating system Contiki}
+  \field{year}{2009}
+\endentry
+
+\entry{longpoll}{misc}{}
+  \name{author}{4}{%
+    {{Loreto}{L.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{Saint-Andre}{S.-A.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{Salsano}{S.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{Wilkins}{W.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Internet Engineering Task Force}%
+  }
+  \list{publisher}{1}{%
+    {IETF}%
+  }
+  \keyw{http, longpolling, streaming}
+  \strng{namehash}{LS+1}
+  \strng{fullhash}{LSSAPSSWG1}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  On today's Internet, the Hypertext Transfer Protocol ({HTTP}) is often used
+  (some would say abused) to enable asynchronous, "server- initiated"
+  communication from a server to a client as well as communication from a
+  client to a server. This document describes known issues and best practices
+  related to such "bidirectional {HTTP}" applications, focusing on the two most
+  common mechanisms: {HTTP} long polling and {HTTP} streaming.%
+  }
+  \field{howpublished}{RFC 6202}
+  \field{title}{Known Issues and Best Practices for the Use of Long Polling and
+  Streaming in Bidirectional {HTTP}}
+  \verb{url}
+  \verb http://www.rfc-editor.org/rfc/rfc6202.txt
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{jabber}{article}{}
+  \name{author}{1}{%
+    {{Saint-Andre}{S.-A.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \field{journaltitle}{Internet Computing, IEEE}
+  \keyw{icse\_exp\_report\_06, xmpp}
+  \strng{namehash}{SAP1}
+  \strng{fullhash}{SAP1}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  Jabber is an open alternative to closed instant messaging ({IM}) and presence
+  services. At its core is the extensible messaging and presence protocol
+  ({XMPP}), which defines how to stream {XML} content and is being used to
+  build not only a large open {IM} network but also a wide range of {XML}
+  applications. This article provides an overview of {Jabber/XMPP} protocols
+  and technologies, as well as an introduction to {XMPP}-based applications.%
+  }
+  \verb{doi}
+  \verb 10.1109/MIC.2005.110
+  \endverb
+  \field{number}{5}
+  \field{pages}{82\bibrangedash 89}
+  \field{title}{Streaming {XML} with {Jabber/XMPP}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/MIC.2005.110
+  \endverb
+  \field{volume}{9}
+  \field{year}{2005}
+\endentry
+
+\entry{xmpp}{misc}{}
+  \name{author}{1}{%
+    {{Saint-Andre}{S.-A.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{imported}
+  \strng{namehash}{SAP2}
+  \strng{fullhash}{SAP2}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  This memo defines the core features of the Extensible Messaging and Presence
+  Protocol (XMPP), a protocol for streaming Extensible Markup Language (XML)
+  elements in order to exchange structured information in close to real time
+  between any two network endpoints. While XMPP provides a generalized,
+  extensible framework for exchanging XML data, it is used mainly for the
+  purpose of building instant messaging and presence applications that meet the
+  requirements of RFC 2779.%
+  }
+  \field{howpublished}{Internet RFC 3920}
+  \field{title}{Extensible Messaging and Presence Protocol (XMPP): Core}
+  \field{year}{2004}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

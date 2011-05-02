@@ -1,0 +1,52 @@
+\subsection{Existing Products}
+
+Many products exist that aim at achieving energy monitoring and control at the power strip level. Many are business oriented with data-centers as their main clients, though a few are starting to target consumers.\\
+
+\paragraph{Business Oriented Products} Owners of large data-centers have long relied on smart Power Distribution Units (read: power-strips). Ranging from "Basic Rack PDUs" that allow only power distribution to "Metered Rack PDUs" that monitor energy consumption in real time, these widely used devices are made by the likes of Schneider Electrics, Emerson and Eaton. While PDUs offer both power monitoring and power switching, their cost prices them out of the consumer market: a \SI{15}{\ampere}, \SI{120}{\volt} APC switched rack PDU costs upwards of \$400, and metered devices usually cost a minimum of \$600.\\
+
+Meanwhile, the consumer market has been lagging behind. Solutions do exist, but they are expensive, impractical, or not quite market-ready. We go into more details for a few of these devices below:
+
+\paragraph{"Smart Strip" power-strip} Manufactured by Smart-Home USA\footnote{\url{http://www.smarthomeusa.com}}, the Smart Strip is a surge protector with a twist: when the appliance plugged into its "control" outlet stops drawing current, the "switched" outlets are automatically switched off. This allows for example to automatically turn off computer peripheral when the computer itself is powered down. The Smart Strip retails for \$40.
+
+\paragraph{USB-controllers} Both PowerUSB\footnote{\url{http://pwrusb.com}} and Insteon\footnote{\url{http://www.insteon.net/}} offer USB power controllers. These units plug into a computer via a USB port and allow outlet switching using bundled software.  While USB controls allow for some nifty tricks, such as powering the printer on and off automatically as needed, these units are neither wireless nor stand alone, and retail for a hefty \$70.
+
+\paragraph{HiSaver} The HiSaver\footnote{\url{www.hisaver.com}} power strip is a power strip and a motion sensor. When it perceives no motion for more than 10 minutes some of the outlets on the strip are switched off. The manufacturers see a use for it with floor lamps, computer peripherals and televisions. The HiSaver Retails for \$110.
+
+\paragraph{Enistic Smart Strip} Enistic's\footnote{\url{http://www2.enistic.com/}} offering is perhaps the closest an existing product comes to matching our vision. Their wireless power strip uses RF communication to report power data to a base station (the "energy controller"), which aggregate the power consumption of each power strip. Unfortunately, this system does not offer remote switching, not does it interface gracefully with other hardware. The "starters kit" retails for \$500.
+
+\paragraph{ThinkEco Modlet} ThinkEco's Modlet\footnote{\url{http://thinkecoinc.com/products.aspx}} is a two outlet device and communicates via ZigBee with a PC dongle.  The Modlet learns from a devices usage and models its switching accordingly.  This solution requires that the user install software on their computer.  Data is cached on the Modlet and sent in batches.  Chart processing and viewing is done on the PC only.  ThinkEco is a funded startup, however Modlet is unavailable for purchase at this time.
+\newline
+\\
+These results are summarized in \tab{tab:existingproducts}.  After reviewing the aforementioned products, we felt that price, complexity and focus on computer peripherals meant none of them fulfilled our vision for an accessible and easy to use consumer ready power monitoring and switching power strip.\\
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+\hline
+\textbf{Product} & \textbf{Features} & \textbf{Price} \\
+\hline \hline
+Business PDUs & Metering, Switching & \$600\\
+\hline
+Smart Strip & Turns off peripheral when computer is off & \$40\\
+\hline
+PowerUSB & Switch Outlets via USB & Not yet for sale\\
+\hline
+Insteon USB controller & Switch outlets via USB & \$70\\
+\hline
+HiSaver & Switch outlets off when no motion is detected & \$110\\
+\hline
+Einistic Smart Strip & Report power consumption to a controller & \$500 "starter kit"\\
+\hline
+Modlet & Metering and Switching & Not yet for sale\\
+\hline
+\end{tabular}
+\caption{Summary of Existing the Features and Prices of Similar Products}\label{tab:existingproducts}
+\end{center}
+\end{table}
+
+% http://www.lukew.com/ff/entry.asp?828
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../netlets"
+%%% End: 

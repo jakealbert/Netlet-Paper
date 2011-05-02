@@ -1,0 +1,62 @@
+\subsection{Networking and Communication}
+\subsubsection{Serial Protocol}
+The serial teletypewriter (TTY) ports on the \arm board are defined as \texttt{/dev/ttyS0}, \texttt{/dev/ttyS1}, and \texttt{/dev/ttyS3}.  The compiled \linux kernel defines the \rsserial connector to be \texttt{ttyS0} while the two-wire UARTs on pins 6/7 and 14/15 as \texttt{ttyS1} and \texttt{ttyS3}, respectively.  All UARTs were set to 9600 baud. \\
+
+The serial communciation between the \olimex and \atmel required that the software running on the \arm request status updates from the \atmega modules regarding the most-recently measured data and that the two relays on the module be independently settable.  Since the TTY is a character device, the character-based protocol shown in \tab{tab:serialprotocol} was implemented.\\
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline
+\textbf{\arm Command} & \textbf{Control String} & \textbf{\atmega Response} \\
+\hline \hline
+Set Outlet $N$ & ``\texttt{s$N$}'' & Open Relay $N$ \\
+Reset Outlet $N$ & ``\texttt{r$N$}'' & Close Relay $N$ \\
+Update Measurements & ``\texttt{u}'' & ``\texttt{spike,current,power,phase;}''\\
+\hline
+\end{tabular}
+\caption{Character-Based Protocol Between the \arm and \atmega}\label{tab:serialprotocol}
+\end{center}
+\end{table}
+
+The \emph{set} and \emph{reset} commands, \texttt{s} and \texttt{r}, are followed by an outlet number, $N$, and there is no response from the module. The \emph{update} command, \texttt{u}, returns a comma-delimited list for each monitored outlet. Since the protocol was defined before the final \atmega PCB design was completed, zero values were ultimately sent for the data relying on the zero-crossing detection.  Likewise, both the number of \atmel modules and the number of outlets, $N$, were \texttt{\#define}d separate from the C logic to support different \netlet model configurations.  To make \texttt{sscanf}-ing the responses easier, outlet data sets boundaries are marked by semi-colons and all messages are terminated by newlines.\\
+
+\subsubsection{XMPP/XML Protocol}
+By design, XMPP messages can wrap XML data and there is fundamentally no difference between generating valid XML documents and XMPP messages.  Each configured \netlet on the controller server corresponds to a login on an XMPP server. Much like e-mail addresses, XMPP usernames take the form \emph{user}@\emph{domain.name}.  Messages can be sent to any username and the XMPP server can be configured to require invitation-acceptance and authorization between addresses, to only allow contact between addresses within the domain, or to filter messages more aggressively.  The protocol designed over XMPP was intended to be generic enough that it would prove useful beyond the \netlet project.\\
+
+XMPP messages are of the form:
+\begin{verbatim}
+   <message>
+   </message>
+\end{verbatim}
+
+XMPP used in the context of instant messaging usually relies on a body 
+
+Updates messages from the \netlet to the controller were sent periodically and were of the form:
+\begin{verbatim}
+  <netlet username-id="...">
+      <outlet outlet-num="1" switch-type="analog" value="0" spike="0">
+         <sensor-data current="..." power="..." timestamp="..." />
+         ...
+      </outlet>
+      ...
+  </status>
+\end{verbatim}
+
+Control messages sent from the controller to the \netlet are initiated by events in the web interface and outlets triggers.  Their form is as follows:
+
+\begin{verbatim}
+   <set-outlet netlet-name="..." outlet-num="1"
+               outlet-type="analog" username="..." value="1" />
+\end{verbatim}
+
+Message validity was rigorously checked at both ends.  We required that the number of outlets and outlet types matched the expected values and that the user account configured on the \netlet matched the user account sending messages from the web application.  Values taken as integers or floats were parsed and messages of incorrect forms were discarded.  Timestamps for when messages were sent versus when messages were received were considered.  Backlogs of control messages would be ignored such that fixing a network issue would not cause the device to respond to all the control messages that were not received.  \netlet devices use XMPP's ``presence'' announcement messages to indicate when they are online.  The format of the data sets allow adjusting the number of messages sent per batch if the message frequency needs to be adjusted.  Moreover, new data types can easily be introduced to the embedded device without needing to modify the controller or datastore backend.\\
+
+Though the data is not encrypted, XMPP handles encryption at the message level.  Insisting on more stringent security would have required configuring and running our own private XMPP server -- a doable, but tedious and unnecessary hassel for a project on \coursetitle. Given that the inner XML datagram can always be encrypted independent of the outer XMPP message, and that both Google and Jabber's free-use servers -- \texttt{\url{talk.google.com}} and \texttt{\url{jabber.org}} -- support authentication and secure messaging, we considered this a purely software issue and felt comfortable saying that the hardware and product supported secure data transmission.\\
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../netlets"
+%%% End: 

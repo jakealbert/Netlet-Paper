@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper,notitlepage]{report}
+\include{includes}
+\include{styling}
+\include{macros}
+
+\bibliography{\jobname}
+
+\begin{document}
+	\date{$\;$\\
+$\;$\\ $\;$ \\}
+\author{
+	Jake Albert \vspace{-5mm} \\ \small \texttt{jake\_albert@brown.edu}
+	\\
+	Joshua Kopin \vspace{-5mm} \\ \small \texttt{joshua\_kopin@brown.edu}
+	\and	
+	Fran\c{c}ois Baldassari \vspace{-5mm} \\ \small \texttt{francois\_baldassari@brown.edu}
+	\\
+	Amin Shaikh \vspace{-5mm} \\ \small \texttt{amin\_shaikh@brown.edu}
+}
+\title{\underline{\course}\\ \netlets : Network Enabled Power Outlets\\ 
+}
+\maketitle
+
+\input{abstract}
+
+\pagebreak
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection\ #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ #1}{}}
+\lhead{\leftmark}
+\rhead{\rightmark}
+\cfoot{\thepage}
+
+\tableofcontents
+
+\include{specifications}
+
+\include{documentation} 
+
+\include{schedules}
+
+\include{debugprogress}
+
+\include{schematics}
+
+\include{cost}
+
+\include{conclusions}
+\pagestyle{plain}
+\nocite{*}
+\renewcommand{\bibname}{References} 
+\printbibliography
+\end{document}

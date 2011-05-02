@@ -1,0 +1,25 @@
+\subsection{\atmel Modules}
+The modules based on the \atmega chip are small boards we designed to take in commands from the main \olimex board via \rsserial and do all of the sensing and switching.
+
+\subsubsection{Sensing}
+Current sensing is achived using the \allegro chip manufactured by Allegro Microsystems. The \allegro is a fully integrated, Hall effect based current sensor IC. The chip can sense bidirectional currents of up to \SI{20}{\ampere} with a sensitivity of \SI{100}{\milli\volt\per\ampere} over the whole 0-5V range of its analog output. Coupled with the \atmega 's 10-bit ADC, this gives us a resolution of \SI{48}{\milli\ampere}. One of the more attractive features of the \allegro chip is its \SI{2.1}{\kilo\volt} isolation which dispenses us from adding opto-isolators to the board.\\
+
+\subsubsection{Switching}
+Switching is achieved with two \relay relays manufactured by \relaymf. Because the \atmega is not able to output enough current to drive the relays we added some power transistors as well as a flyback diode for safety. The transistor is switched by the \atmega , and in turns drives the relay. A circuit diagram is provided below.
+
+%TODO: Add a diagram
+\fig{fig:relaycircuit}
+
+\subsubsection{Programming, Communication, and Power}
+Besides sensing and switching, the board supplies infrastructure for programming and communication, as well as power distribution.
+\\An SPI header was added on the prototype for use with an AVR JTAGICE mkII or any other compatible programmer. While useful for debugging, the SPI header would probably be removed from retail versions of the product to lower the hardware costs.
+\\RS232 is used for communication. It is chosen over plain UART for its robustness to degradation over relatively long distances. The \shiftr level shifter was chosen to convert UART to RS232 for its low price and high ESD protection. We also included a male DB9 header to allow for the use of null-modem cable. Ideally, this system will be replaced by the zigbee wireless protocol in the future.
+\\All of the components require \SI{5}{\volt} to operate properly. Because of prior expectations to have an accompanying power supply board which would do the AC/DC conversion and step down the voltage, only a power header was added to the \atmel module. Regulated power has to be supplied from either another board or a regulated power supply.
+% proof of concept modular
+
+\subsubsection{Software}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../netlets"
+%%% End: 

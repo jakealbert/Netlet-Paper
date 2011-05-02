@@ -1,0 +1,33 @@
+\linespread{1.4}
+\setlength{\parindent}{0.0in}
+\renewcommand{\bibname}{REFERENCES} 
+\def\thesection       {\arabic{section}}
+\setlength\fboxrule{0.5pt}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand \thesection{\Roman{section}}
+\makeatletter
+
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus .2ex}%
+                                   {\LARGE\bf}}
+\renewcommand\subsection{\@startsection {subsection}{2}{\z@}%
+                                   {-3.25ex \@plus -1ex \@minus -.2ex}%
+                                   {1.5ex \@plus .2ex}%
+                                   {\Large\bf}}
+\renewcommand\subsubsection{\@startsection {subsubsection}{3}{\z@}%
+                                   {-3.25ex \@plus -1ex \@minus -.2ex}%
+                                   {1.5ex \@plus .2ex}%
+                                   {\large\bf}}
+\renewcommand\paragraph{\@startsection {paragraph}{4}{\z@}%
+                                   {3.5ex \@plus 1ex \@minus .2ex}%
+                                   {-1em}%
+                                   {\normalfont\bf}}
+
+\makeatother
+
+%\usepackage{helvet}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "netlets"
+%%% End: 

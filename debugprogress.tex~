@@ -1,0 +1,15 @@
+\section{Progress}
+\subsection{Design Process}
+	\begin{itemize}
+		\item Brainstorming
+		\item Block Diagram
+	 	\item Protocols
+		\item Iterative Prototypes?
+	\end{itemize}
+\subsection{Prototypes}
+\subsubsection{Current Board}
+\subsubsection{Proof of Concept}
+% Would be the LEDs, arduinos, and all that
+\subsubsection{First Prototype}
+% The hand-made board
+\subsubsection{Current Prototype}

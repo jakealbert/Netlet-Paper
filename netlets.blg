@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: netlets.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: specifications.aux
+A level-1 auxiliary file: documentation.aux
+A level-1 auxiliary file: schedules.aux
+A level-1 auxiliary file: debugprogress.aux
+A level-1 auxiliary file: schematics.aux
+A level-1 auxiliary file: cost.aux
+A level-1 auxiliary file: conclusions.aux
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: netlets-blx.bib
+Database file #2: netlets.bib
+Biblatex version: 0.9
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 12 entries,
+            6090 wiz_defined-function locations,
+            1208 strings with 11655 characters,
+and the built_in function-call counts, 33737 in all, are:
+= -- 1285
+> -- 1161
+< -- 288
++ -- 349
+- -- 398
+* -- 2362
+:= -- 2206
+add.period$ -- 0
+call.type$ -- 12
+change.case$ -- 162
+chr.to.int$ -- 34
+cite$ -- 22
+duplicate$ -- 3787
+empty$ -- 3597
+format.name$ -- 698
+if$ -- 7686
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 0
+newline$ -- 279
+num.names$ -- 542
+pop$ -- 3508
+preamble$ -- 1
+purify$ -- 186
+quote$ -- 0
+skip$ -- 2009
+stack$ -- 0
+substring$ -- 540
+swap$ -- 1245
+text.length$ -- 313
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 516
+warning$ -- 0
+while$ -- 251
+width$ -- 0
+write$ -- 266

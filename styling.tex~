@@ -1,0 +1,7 @@
+\linespread{1.4}
+\setlength{\parindent}{0.0in}
+\renewcommand{\bibname}{REFERENCES} 
+\def\thesection       {\arabic{section}}
+\setlength\fboxrule{0.5pt}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand \thesection{\Roman{section}}

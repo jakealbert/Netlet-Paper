@@ -1,0 +1,187 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}
+\defcounter {refsection}{0}
+\select@language {american}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {I}Specifications}{3}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {1}Intent}{3}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2}Existing Products}{3}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Business Oriented Products}{4}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{"Smart Strip" power-strip}{4}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{USB-controllers}{4}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{HiSaver}{4}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Enistic Smart Strip}{4}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{ThinkEco Modlet}{5}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {3}Technologies}{5}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Networking}{5}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{HTTP Polling}{6}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Long-Polling}{7}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Persistent SSH Tunnels}{7}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Distributed Messaging \& XMPP}{7}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Wireless Spectra}{9}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Wifi}{9}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Operating Systems}{9}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Peripheral Support}{10}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Wireless Networking}{10}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{XMPP stack}{10}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Documentation}{10}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Hardware requirement}{10}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4}Final Specification}{11}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Main Features}{11}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Monitoring Current}{11}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Calculate Power Use}{11}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Switch On/Off}{12}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Spike Detection}{12}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Price and Target Audience}{12}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Ease of Use}{13}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Precision, Granularity, and Availability of Data}{14}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Note on Modularity}{15}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {II}Documentation}{16}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {1}System Overview}{16}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2}Olimex SAM9-9260\xspace \& Embedded Linux}{16}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Board Features}{16}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{SAM9-l9260\xspace + n $\times $ 2-Outlet ATmega8a\xspace Design}{16}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Development Environment}{16}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Operating System}{16}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Installed Software}{17}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Loudmouth XMPP Library}{17}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{WPA Supplicant}{17}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Avahi}{17}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{OpenSSH}{18}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Samba}{18}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Netatalk}{18}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {3}Atmel ATmega8a\xspace Modules}{18}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Sensing}{18}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Switching}{19}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Programming, Communication, and Power}{19}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Software}{19}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4}Networking and Communication}{19}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Serial Protocol}{19}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{XMPP/XML Protocol}{20}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {5}Power Supply Design}{22}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Power Consumption}{22}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Fabrication \& Cost Considerations}{22}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Feasibility}{22}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {6}Clojure\xspace Web Interface}{22}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Clojure\xspace , the Java Virtual Machine\xspace , \& Google AppEngine\xspace }{22}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Development Environment \& Application Deployment}{24}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Leiningen\xspace , Compojure, \& the \texttt {clj-ybh}\xspace Framework}{25}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Routes, Users, \& Persistance}{26}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Outlet Configuration \& Triggering}{27}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Data Sets \& Charts}{28}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{XMPP Messaging, AppEngine\xspace Channels, \& Jive Smack\xspace }{29}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Interface Overview}{30}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Account Creation}{30}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Netlet Configuration}{30}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Outlet Configuration}{30}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Triggers}{30}
+\defcounter {refsection}{0}
+\contentsline {paragraph}{Charts}{30}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Remaining Work \& Improvements}{30}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {7}Building \& Testing}{31}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {III}Project Timeline}{32}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {1}Embedded XMPP Client}{32}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2}Browser XMPP Controller}{32}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {IV}Progress}{33}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {1}Design Process}{33}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2}Prototypes}{33}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Current Board}{33}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Proof of Concept}{33}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{First Prototype}{33}
+\defcounter {refsection}{0}
+\contentsline {subsubsection}{Current Prototype}{33}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {V}Schematics and PCB Layouts}{34}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {VI}Economic Analysis}{35}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {1}Non-Recurring Engineering Costs}{35}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {2}Component Costs}{35}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {3}Assembly Costs}{35}
+\defcounter {refsection}{0}
+\contentsline {subsection}{\numberline {4}Retail Price}{35}
+\defcounter {refsection}{0}
+\contentsline {section}{\numberline {VII}Conclusions}{36}

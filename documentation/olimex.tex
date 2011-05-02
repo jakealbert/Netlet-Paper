@@ -1,0 +1,37 @@
+\subsection{\olimex \& Embedded Linux}
+\subsubsection{Board Features}
+
+\subsubsection{\arm + n $\times$ 2-Outlet \atmega Design}
+
+\subsubsection{Development Environment}
+
+Having a solid, dependable, and distributed development environment is important when working on an embedded system.  Thus, it was important to the group that the network software could be developed independent of the \olimex board and the ARM architecture.  Italian electronics engineer Francesco Balducci -- Balau82 -- had posted a series on his blog detailing using the QEMU\footnote{\url{http://wiki.qemu.org/Main_Page}} hardware emulator for ARM VersatilePB\footnote{\url{http://www.arm.com/products/tools/versatile.php}} development.\\
+
+A virtual machine running CrunchBang Linux was distributed to the group members with both the QEMU software and CodeSourcery G++ ARM GNU/Linux EABI\footnote{\url{http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite}}  toolchain setup.  On boot, the VMs mounted an NFS share containing the kernel for the QEMU hardware and the root file system used for both QEMU and the \olimex.\cite{balaunfs}  QEMU was configured so that these files on launch and Dropbox\footnote{\url{http://dropbox.com}} was used to keep the VMs synchronized.  \git and \github\footnote{\url{http://github.com/jakealbert/netlet}} were used for version control as well, but admittedly could have been used more frequently.  Group members did not consistently only check in working code and unfortunate code confusion happened.  Namely, working copies were not always kept in the NFS share and at one point the test branched replaced the master branch.\\ 
+
+
+\subsubsection{Operating System}
+The Debian distribution of \glinux was chosen for its support of the \arm chip and convenient package manager. While ressource intensive, Debian's access to numerous networking, security and protocol libraries and packages is critical to our current implementation of \netlets . Bundled GNU tools such as SSH, gcc, and gdb significantly simplified our development while \glinux kernel support for UART communication lowered the amount of coding we had to do ourselves. The Kernel did nonetheless have to be extended and recompiled to allow support for ADC on the SAM9 Chip. We chose to add it as a kernel module, which added \texttt{/dev/adc0} and \texttt{/dev/adc1} as devices. The code can be found in \fig{fig:adc}.\\
+
+\subsubsection{Installed Software}
+
+\paragraph{Loudmouth XMPP Library} Loudmouth is a lightweight C library for XMPP licenced under the GNU Lesser General Public License. With a small number of dependencies: GLib for advanced datastructures and OpenSSL for encryption, it is ideal for embedded applications. The library allows our software to send, receive, and parse XMPP messages asynchronously without the overhead of a full XML parser. Furthermore, its support for both SSL and TLS via openSSH allowed for the strong security we needed for \netlets so as to not allow a possible hacker to switch on and off devices in one's home. Last but not least, the LGPL license allows us to use loudmouth within a non-open source commercial project if we find it desirable.
+
+\paragraph{WPA Supplicant} If we ever wanted to expand the \netlet product to support \wifi, the complete spectrum of authentication schemes needed to be supported.  In particular, since we were engineering and developing the device on \brown's campus, support for \wifix and \wpae security was essential in order to associate the device with the \texttt{Brown-Secure} network.  The \texttt{wpa\_supplicant} binary is configuration-compatible with the version used on Mac OS X and Linux desktops.  Thus, connecting a wireless \netlet to your home \wifi simply involves adding the correct \texttt{network} declarations to the \texttt{wpa\_supplicant.conf} file.
+
+\paragraph{Avahi} The open-source Avahi zeroconf implementation\footnote{\url{http://avahi.org}} provides multicast DNS/DNS service discovery for Linux compatible with Apple's Bonjour network service discovery provider.  Avahi was installed and configured on the \olimex so that the device broadcasts itself on the network and was addressable by its hostname -- \texttt{netlet
+.local} -- rather than IP address.
+
+\paragraph{OpenSSH} The Dropbear Secure Shell (SSH) daemon was removed and replaced by the OpenSSH Server implementation to add support for remote file system sub-directory locks, the Secure File Transfer Protocol (SFTP), and support for multiple simultaneous SSH connections.
+
+\paragraph{Samba} Since a new \netlet would need to be configured by the end-user, only providing an SSH interface was hardly appropriate.  Windows SMB/CIFS support was added with the installation of SAMBA, an ``smb'' user was created, and a share setup in \texttt{/srv/smb/}.
+
+\paragraph{Netatalk} Building the \texttt{netatalk} package from source was necessary to support the Apple Filer Protocol (AFP) used by Mac OS X Snow Leopard for mounting network volumes and to handle connections from hosts with strict password encryption enabled.  Netatalk was configured to share the subfolders of \texttt{/srv/smb/} as volumes.
+\newline
+\\
+Avahi configuration files were written to broadcast the \netlet 's support SSH, SFTP, SMB, and AFP.  Once attached to a user's home network, the device now automatically appeared in the Network section of Gnome/Ubuntu Linux, Mac OS X, and Windows operating systems.  Read-writable network volumes for Logs and Configuration were created and a link to the industry-standard \texttt{wpa\_supplicant.conf} \wifi configuration file was accessible from Configuration.\\
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../netlets"
+%%% End: 

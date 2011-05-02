@@ -1,0 +1,109 @@
+\subsection{\clojure Web Interface}
+The \netlets controller application was written in \clojure and could either be run locally or deployed to \google's cloud hosting.  The controller managed user accounts, facilitated user management of \netlet outlets and triggers, logged \netlet data, and processed user data for visualization.  Details on the application's design, its features, and the technologiesand frameworks behind it follow.
+
+\subsubsection{\clojure, the \jvm, \& \gae}
+\clojure is a dynamic prgramming language that couples the functional style and simplicity of \lisp with the ubiquity of \java and the \jvm.\footnote{\url{http://clojure.org}} It is a general-purpose language and since it compiles directly to JVM bytecode, \clojure applications are runnable wherever the JVM is available.  \clojure syntax is a dialect of \lisp and as such, \clojure code is \clojure data.  This is a powerful construct as it implies that \clojure data structures are inherently viewable, visable, and presentable.  In the case of \netlets, \clojure made the task of processing and responding to incoming requests and messages very straightforward.\\
+
+Because the goal of \netlets was to provide users with an always-accessible control interface, Google's \aengn ``Platform-as-a-Service''  was considered.  By leveraging the company's service reliability and IT structure, \gae provides zero-hassel virtualized cloud hosting, automatic versioning, and simple deployment controls.\footnote{\url{http://code.google.com/appengine/}}  \google's integrated \java and Python web frameworks make developing feature-rich, secure, and supported applications easy. Since \gae runs on \google's infrastructure, applications scale automatically.  Free \gae accounts have CPU time and bandwidth quotas, however the limits are quite high and after reaching the quota, service is either paused or resumed following a pay-by-the-hour/pay-by-the-byte model.  \aengn provides a Messaging library for sending and receiving XMPP, a Channels API for creating WebSockets between client-side \js  and the server, and a structure-free Datastore for map-based persistence.\\
+
+As discussed earlier, it was crucial to both our intended business model and our open platform that security-concious users be able to run their own \netlets controller instances.  \java's ``write once, run anywhere'' motto directly led to the choice of \clojure and \gae.  Such a user is free to sign up for their own \aengn account and operate their own \netlets controller  And provided that we abstract the XMPP and datastore code from the AppEngine libraries, the same \clojure/\java application would be runnable on any computer or server with the JVM.  Most users will prefer the service \google provides and were \netlets to grow beyond AppEngine's quotas, a pricing model could be implemented for new users who neither want to configure or maintain their own controller instance.\\
+
+Since Google's offering just runs \java servlets and the same style web applications can be run on the Jetty stack, we envisioned a \java controller applications that could either be deployed to \aengn or run locally from a \texttt{.jar} file.  \clojure provides access to \java frameworks and instantiation of \java objects, and \google's Messaging, Channels, and Datastore libaries could be used when the code was running in a \gae instance.  A local development \clojure namespace was created that ran the AppEngine servlet locally and substituted Jive Software's Ignite Realitme and Smack communication libraries for their AppEngine counterparts.\\
+
+\subsubsection{Development Environment \& Application Deployment}
+As a dialect of \lisp, \clojure lends itself very nicely to reactive development and \clojure IDEs provide a read-evaluate-print-loop (REPL) for inspecting, using, and modifying variables within the runtime context.  Though this style of interactive development cannot be directly integrated with \gae (since new open incoming ports cannot be bound and new threads cannot be directly forked), it proved invaluable for local development.\\
+
+The \emacs text editor, a versatile tool written in C and its own \lisp dialect, was appropriately chosen for \clojure development.  A background \clojure session is launched using \texttt{Swank} and a REPL is attached using \texttt{Slime} in \emacs.  Opening the main \netlets \clojure document, \texttt{netlet.clj}, and compiling the file with keyboard shortcut \texttt{C-c C-k} allows entering the \texttt{netlet} namespace from within the REPL:
+\begin{lstlisting}
+  user=> (in-ns 'netlet)
+\end{lstlisting}
+
+The process of compiling the local development namespace, \texttt{local-dev.clj}, is identical and afterwards it can be overlayed onto the \texttt{netlet} namespace and the server can be started:
+\begin{lstlisting}
+  netlet=> (use 'local-dev)
+  netlet=> (start-server (var app))
+\end{lstlisting}
+\vspace{2mm}
+The local server runs on port \texttt{8080}.  The \texttt{var} command starts the server with a reference to the \netlet controller application and allows modifying the running, compiled application simply by redefining the \texttt{app} variable.  In this manner, neither the server nor application need to be restarted in order to recompile the underlying functions.  The \emacs keybinding \texttt{C-c C-c} re-evaluates the block of code under the point (cursor) and allows for a quality of iteractive development typically not seen in web and \java development.\\
+
+\gae uses \texttt{war} directories for deployment staging and updates.  Application directories contain an XML file linking base routes to servlet classes and unspecified routes to either trees in the filesystem or other services.  In this case, if an actual file exists within the \texttt{war} folder, it is served.  Otherwise, the routes are passed to the \netlets \clojure application.  An additional route was setup for incoming XMPP messages such that the \clojure application could setup a message handler for responses. Google's web interface provides support for revisions and all updates are differential.  After compiling the \clojure application and building a comprehensive \texttt{.jar} (as described below), the changes could be pushed to \aengn with the following command from within the \netlets project directory:
+\begin{lstlisting}
+  ../appengine-java-sdk/bin/appcfg.sh update war
+\end{lstlisting}
+\vspace{2mm}
+The \aengn \netlet controller is available at \texttt{\url{http://mynetlet.appspot.com}} and the source code is available on \github at \texttt{\url{https://github.com/jakealbert/netlet}}.\\
+
+\subsubsection{\lein, Compojure, \& the \cljybh Framework}
+The \lein build dependency tool provides an interface for Apache Maven\footnote{\url{http://maven.apache.org}} for handling \clojure project libraries.\footnote{\url{https://github.com/technomancy/leiningen}}  The \texttt{project.clj} file at the root of the source tree defines the external \texttt{.jar}s -- Clojars -- that the \netlet code uses.\footnote{\url{http://clojars.org}}  \lein manages build directories, compiling, \texttt{.jar} packaging and building, and running a Swank session and REPL with the correct classpath loaded.\\
+
+\lein's basic functionality is as follows:
+\begin{verbatim}
+    lein clean     # clean the build
+    lein deps      # build dependencies
+    lein compile   # compile clojure
+    lein jar       # compile to dependent .jar
+    lein uberjar   # compile to inclusive .jar
+    lein repl      # start a REPL with classpath
+    lein swank     # start a Swank process with classpath
+\end{verbatim}
+
+\lein allowed us to easily integrate existing Clojars for integrating with Jetty servlets, web application routing, HTML generation, CSS generation, \aengn tools and APIs, date and time arithmetic, sending e-mails from the web application context, making remote HTTP requests, providing \clojure data structures in JSON formatting, wrappers for the \jsmack XMPP suite, and \texttt{zip} transforms from XML to \clojure vectors and maps.\\
+
+The Compojure/\texttt{hiccup} web framework for \clojure was key in the authoring and design of the \netlets controller application.  Compojure treats a web application as a set of routes and uses a simple \texttt{(html ...)} function and vector macros -- \texttt{[:div \{:id "content"\} ...]}, \texttt{[:a \{:href "\#"\} ...]}, \texttt{[:ul [:li 1] [:li 2] [:li 3]]}, etc. --  in place of traditional HTML. This allows \clojure code to  manipulate the HTML DOM identically to manipulating \clojure data prior to generation.   To prevent against \js cross-site scripting (XSS) attacts, Compojure's \texttt{(h ...)} function handles all entity, encoding, and security issues.  The Compojure bare-bones web framework was chosen simply because it integrates seamlessly with \lein and the latest \texttt{-SNAPSHOT} releases are available on Clojars.\\
+
+ A previous \clojure web project, ClojureYBH (\texttt{clj-ybh}), written using the Compojure framework was used was used as a basis for the \netlets controller.\footnote{\url{http://youbroughther.com}}  Previously used on the website Tabs.fm, \texttt{clj-ybh} is a Model-View-Controller (MVC) toolset for building \gae and Compojure applications with \clojure. ClojureYBH handles user authentication, separates administrator panels from user content, defines form routes, provides template views, and allows a complete site to be constructed from functional sections, tabs, and widgets.  The \texttt{clj-ybh} framework defines routing in \texttt{netlet.clj}, section generator functions in \texttt{content.clj}, and block transforms from data to HTML vectors in \texttt{templates.clj}.  ClojureYBH wraps all requests with session management and allows stateful interaction via HTTP requests.  As such, user \texttt{session} and request \texttt{parameter} variables are passed to most functions.\\
+
+\subsubsection{Routes, Users, \& Persistance}
+Routes are first chosen based on whether the user is unauthenticated, authenticated as a user, or authenticated as an administrator. The dataset of users maps e-mail addresses to hashmaps from \clojure symbols -- valueless tokens denoted by \texttt{:} -- to other lists and maps. The \umap can be applied as a function to the username to get a map of the user's \texttt{:auth-level}, hashed \texttt{:password}, configured \texttt{:netlets}, and defined \texttt{:triggers}.  Authentication routes for \texttt{/register}, \texttt{/login}, and \texttt{/logout} do not distinguish between registration and login, but rather e-mails the address with account details.  Administrators gain a ``debug'' widget on every page containing the \texttt{session} and \texttt{parameter} values and an addition section showing the entire \umap.\\
+
+Logged in users can view \texttt{/triggers/} and \texttt{/charts/}.  Configuration routes for \texttt{/add-}, \texttt{/delete-}, and \texttt{/configure-} \texttt{netlet} and similar routes for \texttt{/add-} and \texttt{/delete-} \texttt{trigger} allowed stateful modification of the \umap reference.  \clojure's Persistant HashMap data structures are extensions of \java's base classes, however, they are immutable and thus guarantee thread safety.  All modifications to the \umap are compiled at runtime and occur as synchronous transactions.  As mentioned, \clojure embraces the idea of \emph{code-as-data} and for extra comfort, the entire \umap is written out and re-evaluated when the server is restarted.  Transform functions for mapping the \umap to the \gae Datastore and a locally installed \mongodb associative datamap (via the \congomongo \clojure library) were also started, but their implementation was deemed unnecessary and inconsistent the goals of \brownengn  and the \coursetitle course.\\
+
+\subsubsection{Outlet Configuration \& Triggering} 
+When adding a \netlet, the user is given a choice of the different models and prototypes so that the appropriate number of controls are presented.  The user can also give the device an informative name such as ``Kitchen'' or ``Bedroom''.  Each outlet can have have a \texttt{:switch-type} of \texttt{:analog}, \texttt{:ssr}, or \texttt{:triac}, even though only analog relays were on the board produced.  The user names the outlets that he/she is interested in monitoring.  In the current controller software, the user is able to directly set the receiving XMPP address for the \netlet, though this configuration could certainly happen behind the scenes. The user's \netlets are saved as a list in the user's map.  Each \netlet has a \texttt{:name}, general \netlet \texttt{:data}, and an \texttt{:outlets} map containing the outlet's \texttt{:name}, \texttt{:data} sets, and a \texttt{:value}.  This \texttt{:value} represents the server's understanding of the \netlet's current state, however, the server always trusts the \netlet for its correctness.\\
+
+Named and configured outlets are presented to the user on the overview page and each has a \texttt{select} box for setting the outlet's value.  The \texttt{select}'s \texttt{option}s are determined based on the outlet's \texttt{:type} and whether the outlet's value is binary (on/off) or supports fading. Here, again, the software intends to be forward-thinking and designed to accomodate changes in the product design. The \jquery \js framework was used for the client-side scripting and made the asynchronous \js and XML (AJAX) programming much more managable.\footnote{\url{http://jquery.com}} Most noticeably, \jquery causes the \texttt{select} boxes for the overview and charts sections to auto-post to the server and refresh the DOM contents. The \texttt{form}s post to \texttt{/set-outlet} where the request is repackaged as a message map and handled by the XMPP connection (discussed in more detail below).\\
+
+For each user, a list is maintained of the saved \texttt{:triggers}.  Each trigger associates, for a particular \texttt{:outlet} on a specific \texttt{:netlet}, a new value, \texttt{:newval}, to take on when a rising or falling \texttt{:edge} is detected on a outlet \texttt{:trigger-outlet} of \netlet \texttt{:trigger-netlet}.   When incoming messages are received that indicate a positive or negative spike in one of the measured values, the trigger list is filtered for outlets triggered on the same \netlet and outlet and messages are sent to the outlets setting the new values in an identical fashion to user-initiated messages.\\
+
+
+\subsubsection{Data Sets \& Charts}
+Data sets were stored as immutable sorted binary trees using \clojure's \texttt{(sorted-set-by ...)} function by UNIX timestamp.  Each data set stores a \texttt{:type} symbol and  \texttt{:value}.  Thus, user data can be queried by \netlet, by outlet, or by time range with minimal computation.  Data sets can be filtered by \texttt{:type} or subsampled by some modulo of the \texttt{:timestamp}.\\
+
+The \texttt{/charts/} section of the site provides a summary of the user's current and power usage.  The interface allows narrowing in on a particular time interval and the graphs update instantly.  Routes of the form \texttt{/charts/:type.:ext} returns the user data for the chart of type \texttt{:type} in a format governed by the extension \texttt{:ext}.  For example, \texttt{/charts/current.png} serves the user data as PNG chart by redirecting to the Google Charts API with the correct data in the URL.\footnote{\url{http://code.google.com/apis/chart/}}  Likewise, \texttt{/charts/power.json} serves the user data as a JavaScript-Over-Network (JSON) object for processing client-side.  Both the JSON and PNG responses can be suffixed with request parameters indicating the start date, end date, \netlets, outlets, and the number of data points.  Data sets are subsampled when graphing large intervals to improve performance.\\
+
+In addition to the Google Charts API, the JSON routes are used by client-side \js and the \highcharts JS toolset to create live-streaming and interactive data visualizations.\footnote{\url{http://highcharts.com}}  Side-scrolling visualizations of current and power usage break down data by outlet, curves can be hidden and shown, and data points can be investigated.  \highcharts handles axis and label formatting and data units as well. \js callback functions request for data points with timestamps greater than the latest received to the \texttt{/charts/:type.json?startdt=\_}.  Since \netlets is about user data and letting the user comprehend their power usage, aesthetically pleasing visualizations are key. The rise in popularity of infographics suggests the customer wants a summary, not the data itself. \highcharts spline, area, column, bar, pie, and scatter charts all have the potential to make the \netlets controller application fantastic.  Further data breakdown and analysis models would clearly be the next step, but we felt this level of data presentation was sufficient to illustrate the coming together of the client-side and server-side realtime technologies.\\
+
+
+
+\subsubsection{XMPP Messaging, \aengn Channels, \& \jsmack} 
+Clojure's \texttt{xml}, \texttt{zip}, and \texttt{zip-filter.xml} libraries transformed incoming XMPP messages into filter- and map-able data structures. Jive Software's \smack creates \java \texttt{XMPPConnection} objects for each user and attaches a \texttt{PacketListener} set to append incoming \texttt{outlet-data} vectors to the user's \texttt{:data} sets.  Likewise, on \gae the \texttt{XMPPServiceFactory} and \texttt{MessageBuilder} allows for sending messages over \texttt{\url{talk.google.com}}.  \aengn controller messages are sent to and received from \texttt{webapp@netlet.appspot.com}, while \smack messages are sent to and received from \texttt{netlet@jabber.org}.  Prototype \netlets have been using the \texttt{netlet-prototype@jabber.org} account.  All accounts have a password of \texttt{engn1650}.\\
+
+
+When work on the \clojure controller began, \gae only supported sending strings using the \texttt{MessageBuilder} class and we quickly hit a wall trying to send valid XML sub-trees in the message body from \aengn. In the case of \jsmack, the \texttt{Message} extended the \texttt{Packet} class and an \texttt{XMLMessage} class solved the problem.  No similar solution could be implemented for \aengn, and finally, attributes of the \texttt{set-outlet} tag were replaced with XMPP message properties of the form
+\begin{verbatim}
+    <property name="outlet-num" value="1" />
+    <property name="outlet-type" value="analog" />
+\end{verbatim}
+
+In November 2010, \gae introduced the Channel API\footnote{\url{http://code.google.com/appengine/docs/java/channel/overview.html}}, which careful examination of the documentation reveals is just an abstraction of \js and server XML-over-XMPP communciation.  Since implementing the Channel API would mean leaving behind the now-finished \aengn XMPP support, we opted for a clearly sub-optimal approach wherein multiple namespaced wrapper tags are used to avoid the entity encoding issues. The \smack, \aengn, and Loudmouth XMPP implementations only caused issues when namespaces where nested once, but doubly nested namespaces preserved the XML structure.\\
+
+The result of this work is that the \netlet \clojure controller application transforms outgoing data into XML fragments to send over XMPP messages to the \netlet and the application responds to incoming XMPP messages by extracting out the XML block, transforming it into idiomatic \clojure data structures, and storing the relevant vectors in the global \umap.  This system works regardless of whether the controller is hosted from \gae or run locally from the \texttt{.jar} produced by \lein. The only difference between these two approaches is the receiving application Jabber ID to which the \netlet is sending its data.\\
+
+\subsubsection{Interface Overview}
+
+\paragraph{Account Creation}
+\paragraph{Netlet Configuration}
+\paragraph{Outlet Configuration}
+\paragraph{Triggers}
+\paragraph{Charts}
+
+
+\subsubsection{Remaining Work \& Improvements}
+
+Remaining work to be done on the \clojure web application includes creating user profiles and user management pages, fine-grained administrator controls so that \umap problems can be solved without full datastore restores, and clearly more chart options and defaults should be created.  Though triggers can be setup and are logged when there are incoming spikes, threading issues on \aengn prevented the triggers from actually getting distributed.  Otherwise, smarter trigger options and presets should be supported.  Timed triggers are a natural progression and would be simple to implement -- a global timer akin to \texttt{cron} would periodically scan all users' triggers and send out messages appropriately.\\
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../netlets"
+%%% End: 
+

@@ -1,0 +1,61 @@
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{filecontents}
+\usepackage{float}
+\usepackage{array}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{setspace}
+\usepackage[hang,labelfont={bf}, margin=0cm]{caption}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\usepackage[margin=1in]{geometry}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[]{biblatex}
+\usepackage[pdftex]{graphicx}
+\usepackage{circuitikz}
+\ctikzset{bipoles/length=1.2cm}
+\usepackage{listings}
+\usepackage{color}
+\lstset{fancyvrb=true}
+\lstset{
+	basicstyle=\small,
+	keywordstyle=\bfseries,
+	identifierstyle=\tt,
+	commentstyle=\it,
+	stringstyle=,
+	showstringspaces=false,
+	tabsize=2,
+	numbers=none,
+	mathescape=true,
+	breaklines=true,
+	captionpos=b,
+	numberstyle=\tiny,
+	%stepnumber=4
+	}
+	\lstset{language={lisp}}
+\lstset{morekeywords={in-ns,use,start-server,=>,var}}
+
+
+\newenvironment{changemargin}[2]{% 
+  \begin{list}{}{% 
+    \setlength{\topsep}{0pt}% 
+    \setlength{\leftmargin}{#1}%a 
+    \setlength{\rightmargin}{#2}% 
+    \setlength{\listparindent}{\parindent}% 
+    \setlength{\itemindent}{\parindent}% 
+    \setlength{\parsep}{\parskip}% 
+  }% 
+  \item[]}{\end{list}}
+  
+  \newcommand{\degree}{\ensuremath{^\circ}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\newcommand{\fig}[1]{\textbf{Figure \ref{#1}}}
+\newcommand{\equ}[1]{\textbf{Equation \ref{#1}}}
+\newcommand{\tab}[1]{\textbf{Table \ref{#1}}}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}

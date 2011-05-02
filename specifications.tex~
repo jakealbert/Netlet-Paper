@@ -1,0 +1,28 @@
+\section{Specifications}
+	
+\input{specifications/intent}
+	
+\input{specifications/existingproducts}
+	
+\subsection{Technologies}
+	
+\input{specifications/networking}	
+	
+\input{specifications/operatingsystems}
+
+\subsection{Final Specification}
+			
+\input{specifications/main-features}
+		
+\input{specifications/price-and-audience}
+
+\input{specifications/ease-of-use}
+		
+\input{specifications/data}
+		
+\input{specifications/modularity}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "netlets"
+%%% End: 

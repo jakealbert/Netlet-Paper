@@ -1,0 +1,1285 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  1 MAY 2011 19:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**netlets.tex
+(./netlets.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\@input{includes.aux}
+\openout2 = `includes.aux'.
+
+(./includes.tex
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen112
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/filecontents/filecontents.sty
+Package: filecontents 2009/03/17 v1.2 Create an external file from within a LaT
+eX document
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks19
+\float@box=\box28
+\@float@everytoks=\toks20
+\@floatcapt=\box29
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen113
+\extrarowheight=\dimen114
+\NC@list=\toks21
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/expl3.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3names.sty
+Package: l3names 2010/07/11 v1981 L3 Experimental Naming Scheme for TeX Primiti
+ves
+)
+Package: expl3 2010/07/13 v1982 L3 Experimental code bundle wrapper
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count101
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3basics.sty
+Package: l3basics 2010/06/07 v1942 L3 Experimental basic definitions
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3expan.sty
+Package: l3expan 2010/06/10 v1948 L3 Experimental Argument Expansion module
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3tl.sty
+Package: l3tl 2010/05/22 v1919 L3 Experimental Token Lists
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3intexpr.sty
+Package: l3intexpr 2010/06/15 v1957 L3 Integer Expressions
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3quark.sty
+Package: l3quark 2010/03/21 v1853 L3 Experimental Quark Commands
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3seq.sty
+Package: l3seq 2010/03/29 v1879 L3 Experimental sequences and stacks
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3toks.sty
+Package: l3toks 2010/05/25 v1933 L3 Experimental Token Registers
+\l_tmpb_toks=\toks22
+\l_tmpc_toks=\toks23
+\g_tmpa_toks=\toks24
+\g_tmpb_toks=\toks25
+\g_tmpc_toks=\toks26
+\c_empty_toks=\toks27
+\l_tl_replace_toks=\toks28
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3int.sty
+Package: l3int 2010/05/25 v1933 L3 Experimental Integer module
+\l_tmpa_int=\count102
+\l_tmpb_int=\count103
+\l_tmpc_int=\count104
+\g_tmpa_int=\count105
+\g_tmpb_int=\count106
+\c_max_int=\count107
+\g_tl_inline_level_int=\count108
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3prg.sty
+Package: l3prg 2010/03/21 v1853 L3 Experimental control structures
+\g_prg_inline_level_int=\count109
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3clist.sty
+Package: l3clist 2010/03/29 v1878 L3 Experimental comma separated lists
+\g_clist_inline_level_int=\count110
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3token.sty
+Package: l3token 2010/04/11 v1890 L3 Experimental token investigation and manip
+ulation
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3prop.sty
+Package: l3prop 2010/03/21 v1857 L3 Experimental Property Lists
+\g_prop_inline_level_int=\count111
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3msg.sty
+Package: l3msg 2010/03/23 v1866 L3 Experimental LaTeX Messages module
+\l_msg_redirect_classes_prop=\toks29
+\l_msg_redirect_names_prop=\toks30
+\l_msg_redirect_fatal_prop=\toks31
+\l_msg_redirect_error_prop=\toks32
+\l_msg_redirect_warning_prop=\toks33
+\l_msg_redirect_info_prop=\toks34
+\l_msg_redirect_log_prop=\toks35
+\l_msg_redirect_trace_prop=\toks36
+\l_msg_redirect_none_prop=\toks37
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3io.sty
+Package: l3io 2010/05/22 v1923 L3 Experimental i/o module
+\g_iow_streams_prop=\toks38
+\g_ior_streams_prop=\toks39
+\l_iow_stream_int=\count112
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3skip.sty
+Package: l3skip 2010/05/25 v1933 L3 Experimental skip registers
+\l_tmpa_skip=\skip48
+\l_tmpb_skip=\skip49
+\l_tmpc_skip=\skip50
+\g_tmpa_skip=\skip51
+\g_tmpb_skip=\skip52
+\l_tmpa_dim=\dimen115
+\l_tmpb_dim=\dimen116
+\l_tmpc_dim=\dimen117
+\l_tmpd_dim=\dimen118
+\g_tmpa_dim=\dimen119
+\g_tmpb_dim=\dimen120
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3box.sty
+Package: l3box 2010/05/22 v1919 L3 Experimental Box module
+\l_tmpb_box=\box30
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3keyval.sty
+Package: l3keyval 2010/04/11 v1890 L3 Experimental keyval processing
+\l_KV_level_int=\count113
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3keys.sty
+Package: l3keys 2010/05/24 v1931 L3 Experimental key-value support
+\l_keys_choice_int=\count114
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3precom.sty
+Package: l3precom 2010/02/09 v1793 L3 Experimental precompilation module
+\g_gen_sym_int=\count115
+\g_ggen_sym_int=\count116
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3xref.sty
+Package: l3xref 2010/02/09 v1786 L3 Experimental cross referencing
+\g_xref_all_curr_immediate_fields_prop=\toks40
+\g_xref_all_curr_deferred_fields_prop=\toks41
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3file.sty
+Package: l3file 2010/03/21 v1853 L3 Experimental file loading
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/expl3/l3fp.sty
+Package: l3fp 2010/07/08 v1979 L3 Experimental floating-point operations
+\l_fp_input_a_integer_int=\count117
+\l_fp_input_a_decimal_int=\count118
+\l_fp_input_b_integer_int=\count119
+\l_fp_input_b_decimal_int=\count120
+\l_fp_input_a_sign_int=\count121
+\l_fp_input_b_sign_int=\count122
+\l_fp_split_sign_int=\count123
+\l_fp_mul_a_i_int=\count124
+\l_fp_mul_a_ii_int=\count125
+\l_fp_mul_a_iii_int=\count126
+\l_fp_mul_a_iv_int=\count127
+\l_fp_mul_a_v_int=\count128
+\l_fp_mul_a_vi_int=\count129
+\l_fp_mul_b_i_int=\count130
+\l_fp_mul_b_ii_int=\count131
+\l_fp_mul_b_iii_int=\count132
+\l_fp_mul_b_iv_int=\count133
+\l_fp_mul_b_v_int=\count134
+\l_fp_mul_b_vi_int=\count135
+\l_fp_mul_output_int=\count136
+\l_fp_div_count_int=\count137
+\l_fp_div_offset_int=\count138
+\l_fp_output_sign_int=\count139
+\l_fp_output_integer_int=\count140
+\l_fp_output_decimal_int=\count141
+\l_fp_round_discard_int=\count142
+\l_fp_round_position_int=\count143
+\l_fp_tmp_int=\count144
+\c_one_hundred_million=\count145
+\c_one_thousand_million=\count146
+\l_fp_tmp_dim=\dimen121
+\l_fp_round_precision_int=\count147
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count148
+\calc@Bcount=\count149
+\calc@Adimen=\dimen122
+\calc@Bdimen=\dimen123
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count150
+\calc@Cskip=\skip55
+))
+Package: siunitx 2010/07/15 v2.0n A comprehensive (SI) units package
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/xpackages/xtras/l3keys2e.sty
+Package: l3keys2e 2009/08/24 v1494 Parsing LaTeX3 keyvals as LaTeX2e package op
+tions
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/xpackages/xbase/xparse.sty
+Package: xparse 2010/05/23 v1927 Generic document command parser
+\c_xparse_shorthands_prop=\toks42
+\l_xparse_m_args_int=\count151
+\l_xparse_mandatory_args_int=\count152
+\l_xparse_processor_int=\count153
+\l_xparse_total_args_int=\count154
+)
+ LaTeX Info: Defining document command \ProcessKeysOptions
+(LaTeX)  with arg. spec. 'm' on line 116.
+
+ LaTeX Info: Defining document command \ProcessKeysPackageOptions
+(LaTeX)  with arg. spec. 'm' on line 120.
+
+)
+\l_siunitx_tmp_box=\box31
+\l_siunitx_tmp_int=\count155
+\l_siunitx_number_in_prop=\toks43
+\l_siunitx_round_int=\count156
+\l_siunitx_process_decimal_int=\count157
+\l_siunitx_process_uncertainty_int=\count158
+\l_siunitx_process_precision_int=\count159
+\l_siunitx_number_out_prop=\toks44
+\l_siunitx_angle_marker_box=\box32
+\l_siunitx_angle_unit_box=\box33
+\l_siunitx_angle_marker_dim=\dimen124
+\l_siunitx_angle_unit_dim=\dimen125
+\l_siunitx_angle_degree_prop=\toks45
+\l_siunitx_angle_minute_prop=\toks46
+\l_siunitx_angle_second_prop=\toks47
+\l_siunitx_unit_int=\count160
+\l_siunitx_unit_prop=\toks48
+\l_siunitx_unit_denominator_int=\count161
+\l_siunitx_unit_numerator_int=\count162
+\l_siunitx_unit_prefix_int=\count163
+\l_siunitx_unit_prefix_base_int=\count164
+\l_siunitx_unit_prefix_gram_int=\count165
+\l_siunitx_number_product_int=\count166
+\c_siunitx_one_fill_skip=\skip56
+\c_siunitx_table_correction_skip=\skip57
+\l_siunitx_table_unit_align_skip=\skip58
+\l_siunitx_table_fill_box=\box34
+\l_siunitx_table_fill_dim=\dimen126
+\l_siunitx_table_pre_box=\box35
+\l_siunitx_table_post_box=\box36
+\l_siunitx_table_result_box=\box37
+\l_siunitx_table_decimal_dim=\dimen127
+\l_siunitx_table_exponent_dim=\dimen128
+\l_siunitx_table_integer_dim=\dimen129
+\l_siunitx_table_mantissa_dim=\dimen130
+\l_siunitx_table_marker_dim=\dimen131
+\l_siunitx_table_result_dim=\dimen132
+\l_siunitx_table_uncert_dim=\dimen133
+\l_siunitx_table_gap_dim=\dimen134
+\l_siunitx_table_model_prop=\toks49
+\l_siunitx_table_number_align_skip=\skip59
+\l_siunitx_table_text_align_skip=\skip60
+\l_siunitx_table_decimal_int=\count167
+\l_siunitx_table_exponent_int=\count168
+\l_siunitx_table_integer_int=\count169
+\l_siunitx_table_uncert_int=\count170
+ LaTeX Info: Defining document command \ang
+(LaTeX)  with arg. spec. 'o>{\SplitArgument {2}{;}}m' on line 5629.
+
+ LaTeX Info: Defining document command \num
+(LaTeX)  with arg. spec. 'om' on line 5636.
+
+ LaTeX Info: Defining document command \numlist
+(LaTeX)  with arg. spec. 'o>{\SplitList {;}}m' on line 5643.
+
+ LaTeX Info: Defining document command \numrange
+(LaTeX)  with arg. spec. 'omm' on line 5650.
+
+ LaTeX Info: Defining document command \si
+(LaTeX)  with arg. spec. 'om' on line 5660.
+
+ LaTeX Info: Defining document command \SIlist
+(LaTeX)  with arg. spec. 'o>{\SplitList {;}}mm' on line 5670.
+
+ LaTeX Info: Defining document command \SIrange
+(LaTeX)  with arg. spec. 'ommm' on line 5680.
+
+ LaTeX Info: Defining document command \SI
+(LaTeX)  with arg. spec. 'omom' on line 5690.
+
+ LaTeX Info: Defining document command \sisetup
+(LaTeX)  with arg. spec. 'm' on line 5693.
+
+ LaTeX Info: Defining document command \siunitx_bookmark_num:w
+(LaTeX)  with arg. spec. 'om' on line 5729.
+
+ LaTeX Info: Defining document command \siunitx_bookmark_numrange:w
+(LaTeX)  with arg. spec. 'omm' on line 5731.
+
+ LaTeX Info: Defining document command \siunitx_bookmark_si:w
+(LaTeX)  with arg. spec. 'om' on line 5732.
+
+ LaTeX Info: Defining document command \siunitx_bookmark_SI:w
+(LaTeX)  with arg. spec. 'omom' on line 5734.
+
+ LaTeX Info: Defining document command \siunitx_bookmark_SIrange:w
+(LaTeX)  with arg. spec. 'ommm' on line 5736.
+
+\g_ior_tmp_stream=\read1
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks50
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/beamer/translator/translator-lang
+uage-mappings.tex)))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2009/05/18 v2.2 Customized lists
+\enit@toks=\toks51
+\labelindent=\skip61
+\enit@outerparindent=\dimen135
+\enitdp@desc=\count171
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen136
+\captionmargin@=\dimen137
+\captionwidth=\dimen138
+\caption@indent=\dimen139
+\caption@parindent=\dimen140
+\caption@hangindent=\dimen141
+)
+\c@ContinuedFloat=\count172
+Package caption Info: float package is loaded.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count173
+\FV@InFile=\read2
+\FV@TabBox=\box38
+\c@FancyVerbLine=\count174
+\FV@StepNumber=\count175
+\FV@OutFile=\write3
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count176
+)))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/07/13 v5.5 Page Geometry
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count177
+\Gm@cntv=\count178
+\c@Gm@tempcnt=\count179
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks52
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count180
+\U@D=\dimen150
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2010/06/09 v5.0a context-sensitive quotations
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2010/04/10 v1.9 e-TeX tools for LaTeX
+\etb@tempcnta=\count181
+)
+\csq@reset=\count182
+\csq@gtype=\count183
+\csq@glevel=\count184
+\csq@qlevel=\count185
+\csq@maxlvl=\count186
+\csq@tshold=\count187
+\csq@ltx@everypar=\toks53
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2010/06/02 v5.0 csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2010/03/19 v0.9a programmable bibliographies
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\c@listtotal=\count188
+\c@listcount=\count189
+\c@liststart=\count190
+\c@liststop=\count191
+\c@citecount=\count192
+\c@citetotal=\count193
+\c@multicitecount=\count194
+\c@multicitetotal=\count195
+\c@instcount=\count196
+\c@maxnames=\count197
+\c@minnames=\count198
+\c@maxitems=\count199
+\c@minitems=\count200
+\c@uniquename=\count201
+\c@refsection=\count202
+\c@refsegment=\count203
+\c@maxextrayear=\count204
+\c@maxextraalpha=\count205
+\c@abbrvpenalty=\count206
+\c@highnamepenalty=\count207
+\c@lownamepenalty=\count208
+\c@maxparens=\count209
+\c@parenlevel=\count210
+\blx@tempcnta=\count211
+\blx@tempcntb=\count212
+\blx@maxsection=\count213
+\blx@maxsegment=\count214
+\blx@notetype=\count215
+\blx@parenlevel@text=\count216
+\blx@parenlevel@foot=\count217
+\labelnumberwidth=\skip62
+\labelalphawidth=\skip63
+\shorthandwidth=\skip64
+\biblabelsep=\skip65
+\bibitemsep=\skip66
+\bibnamesep=\skip67
+\bibinitsep=\skip68
+\bibparsep=\skip69
+\bibhang=\skip70
+\blx@auxin=\read3
+\blx@auxout=\write4
+\c@labelname=\count218
+\c@author=\count219
+\c@shortauthor=\count220
+\c@editor=\count221
+\c@editora=\count222
+\c@editorb=\count223
+\c@editorc=\count224
+\c@shorteditor=\count225
+\c@bookauthor=\count226
+\c@translator=\count227
+\c@annotator=\count228
+\c@commentator=\count229
+\c@introduction=\count230
+\c@foreword=\count231
+\c@afterword=\count232
+\c@holder=\count233
+Normal \count register pool exhausted, switching to extended pool.
+\c@namea=\count277
+\c@nameb=\count278
+\c@namec=\count279
+\c@institution=\count280
+\c@language=\count281
+\c@location=\count282
+\c@organization=\count283
+\c@origlocation=\count284
+\c@origpublisher=\count285
+\c@pageref=\count286
+\c@publisher=\count287
+\c@lista=\count288
+\c@listb=\count289
+\c@listc=\count290
+\c@listd=\count291
+\c@liste=\count292
+\c@listf=\count293
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2010/03/19 v0.9a biblatex generic compatibility
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2010/03/19 v0.9a biblatex generic definitions
+\c@smartand=\count294
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2010/03/19 v0.9a biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2010/03/19 v0.9a biblatex bibliography style
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2010/03/19 v0.9a biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2009/11/18 The CircuiTikz circuit drawing package version 0
+.2.3
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks54
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2008/02/20 v2.00 (rcs-revision 1.21)
+))
+Package: pgf 2008/01/15 v2.00 (rcs-revision 1.12)
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks55
+\pgfkeys@temptoks=\toks56
+)
+\pgf@x=\dimen153
+\pgf@y=\dimen154
+\pgf@xa=\dimen155
+\pgf@ya=\dimen156
+\pgf@xb=\dimen157
+\pgf@yb=\dimen158
+\pgf@xc=\dimen159
+\pgf@yc=\dimen160
+\c@pgf@counta=\count295
+\c@pgf@countb=\count296
+\c@pgf@countc=\count297
+\c@pgf@countd=\count298
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/01/13  (rcs-revision 1.6)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 885.
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2007/12/20  (rcs-revision 1.20)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2007/12/17  (rcs-revision 1.8)
+)))
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2008/01/23  (rcs-revision 1.6)
+\pgfsyssoftpath@smallbuffer@items=\count299
+\pgfsyssoftpath@bigbuffer@items=\count300
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2010/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgfmath@box=\box39
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@stack=\toks57
+\c@pgfmath@parsecounta=\count301
+\c@pgfmath@parsecountb=\count302
+\c@pgfmath@parsecountc=\count303
+\pgfmath@parsex=\dimen161
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathoperations.code
+.tex
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathtrig.code.tex)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathrnd.code.tex))
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/math/pgfmathbase.code.tex))
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2008/02/03  (rcs-revision 1.13)
+\pgf@picminx=\dimen162
+\pgf@picmaxx=\dimen163
+\pgf@picminy=\dimen164
+\pgf@picmaxy=\dimen165
+\pgf@pathminx=\dimen166
+\pgf@pathmaxx=\dimen167
+\pgf@pathminy=\dimen168
+\pgf@pathmaxy=\dimen169
+\pgf@xx=\dimen170
+\pgf@xy=\dimen171
+\pgf@yx=\dimen172
+\pgf@yy=\dimen173
+\pgf@zx=\dimen174
+\pgf@zy=\dimen175
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2008/02/13  (rcs-revision 1.14)
+\pgf@path@lastx=\dimen176
+\pgf@path@lasty=\dimen177
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2008/01/23  (rcs-revision 1.11)
+\pgf@shorten@end@additional=\dimen178
+\pgf@shorten@start@additional=\dimen179
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2008/01/15  (rcs-revision 1.26)
+\pgfpic=\box40
+\pgf@hbox=\box41
+\pgf@layerbox@main=\box42
+\pgf@picture@serial@count=\count304
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2007/12/12  (rcs-revision 1.8)
+\pgflinewidth=\dimen180
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2008/02/04  (rcs-revision 1.10)
+\pgf@pt@x=\dimen181
+\pgf@pt@y=\dimen182
+\pgf@pt@temp=\dimen183
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/01/23  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2007/12/10  (rcs-revision 1.9)
+\pgf@max=\dimen184
+\pgf@sys@shading@range@num=\count305
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2008/01/15  (rcs-revision 1.1)
+\pgfexternal@startupbox=\box43
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2008/01/15  (rcs-revision 1.1)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2008/01/15  (rcs-revision 1.1)
+)))
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2008/02/13  (rcs-revision 1.4)
+\pgfnodeparttextbox=\box44
+\toks@savedmacro=\toks58
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
+\pgf@plotwrite=\write5
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.00 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen185
+\pgf@nodesepend=\dimen186
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.00 (rcs-revision 1.1)
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2007/11/07 v2.00 (rcs-revision 1.8)
+\pgffor@iter=\dimen187
+\pgffor@skip=\dimen188
+))
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2008/02/13 v2.00 (rcs-revision 1.27)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
+\pgf@plot@mark@count=\count306
+\pgfplotmarksize=\dimen189
+)
+\tikz@lastx=\dimen190
+\tikz@lasty=\dimen191
+\tikz@lastxsaved=\dimen192
+\tikz@lastysaved=\dimen193
+\tikzleveldistance=\dimen194
+\tikzsiblingdistance=\dimen195
+\tikz@figbox=\box45
+\tikz@tempbox=\box46
+\tikztreelevel=\count307
+\tikznumberofchildren=\count308
+\tikznumberofcurrentchild=\count309
+\tikz@fig@count=\count310
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
+\pgfmatrixcurrentrow=\count311
+\pgfmatrixcurrentcolumn=\count312
+\pgf@matrix@numberofcolumns=\count313
+)
+\tikz@expandcount=\count314
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+)))
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2008/02/04 v2.00 (rcs-revision 1.5)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/libraries/pgflibrarydecorat
+ions.pathmorphing.code.tex
+(/usr/local/texlive/2010/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen196
+\pgfdecoratedremainingdistance=\dimen197
+\pgfdecoratedinputsegmentcompleteddistance=\dimen198
+\pgfdecoratedinputsegmentremainingdistance=\dimen199
+\pgf@decorate@distancetomove=\dimen200
+\pgf@decorate@repeatstate=\count315
+\pgfdecorationsegmentamplitude=\dimen201
+\pgfdecorationsegmentlength=\dimen202
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/circuitikz.code.tex
+\pgf@circ@Rlen=\dimen203
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircutils.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircmath.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircshapes.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircmonopoles.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircbipoles.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcirctripoles.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircquadpoles.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcirclabel.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcircvoltage.sty)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/pgfcirccurrent.sty))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/circuitikz/circuitikz1.code.tex
+\pgf@circ@res@up=\dimen204
+\pgf@circ@res@down=\dimen205
+\pgf@circ@res@zero=\dimen206
+\pgf@circ@res@left=\dimen207
+\pgf@circ@res@right=\dimen208
+\pgf@circ@res@other=\dimen209
+\pgf@circ@res@step=\dimen210
+\pgfstartlinewidth=\dimen211
+)) (/usr/local/texlive/2010/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count316
+\lst@gtempboxa=\box47
+\lst@token=\toks59
+\lst@length=\count317
+\lst@currlwidth=\dimen212
+\lst@column=\count318
+\lst@pos=\count319
+\lst@lostspace=\dimen213
+\lst@width=\dimen214
+\lst@newlines=\count320
+\lst@lineno=\count321
+\lst@maxwidth=\dimen215
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count322
+\lst@skipnumbers=\count323
+\lst@framebox=\box48
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\lstFV@gtempboxa=\box49
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2004/09/05 1.3 listings language file
+))
+\@input{styling.aux}
+\openout2 = `styling.aux'.
+
+(./styling.tex)
+\@input{macros.aux}
+\openout2 = `macros.aux'.
+
+(./macros.tex)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'american'.
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2010/02/14 v0.9 biblatex localization
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2010/03/19 v0.9a biblatex localization
+))
+(./netlets.aux (./specifications.aux))
+\openout1 = `netlets.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-basic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count324
+\scratchdimen=\dimen216
+\scratchbox=\box50
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen217
+\MPnumerator=\count328
+\everyMPtoPDFconversion=\toks61
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout4 = `netlets-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'netlets.bbl' found.
+(./netlets.bbl)
+Package biblatex Info: Reference section=0 on input line 8.
+Package biblatex Info: Reference segment=0 on input line 8.
+\c@lstlisting=\count329
+\c_siunitx_mathsf_int=\count330
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+\c_siunitx_mathtt_int=\count331
+ (./abstract.tex) [1
+
+
+
+
+
+
+
+{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./netlets.toc)
+\tf@toc=\write6
+\openout6 = `netlets.toc'.
+
+ [2
+
+]
+\openout2 = `specifications.aux'.
+
+ (./specifications.tex (./specifications/intent.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 11.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--4
+
+ []
+
+(./specifications/existingproducts.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+[3
+
+] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+
+ []
+
+
+Overfull \hbox (8.88693pt too wide) in paragraph at lines 24--43
+ [] 
+ []
+
+) (./specifications/networking.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+[5]
+Overfull \hbox (1.78476pt too wide) in paragraph at lines 8--9
+ \OT1/cmss/bx/n/12 Long-Polling[] \OT1/cmss/m/n/12 Fun-da-men-tally, long-polli
+ng is not too dif-fer-ent from tra-di-tional HTTP polling.
+ []
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 15.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 15.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 15.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+) (./specifications/operatingsystems.tex)
+
+! LaTeX Error: File `specifications/mainfeatures.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.15 \input{specifications/mainfeatures}
+                                        ^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 25574 strings out of 493747
+ 513583 string characters out of 3143546
+ 670792 words of memory out of 3000000
+ 28356 multiletter control sequences out of 15000+200000
+ 19761 words of font info for 78 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 58i,8n,53p,1258b,889s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
